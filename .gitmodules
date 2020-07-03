@@ -1,0 +1,3 @@
+[submodule "FootyReactScraper"]
+	path = FootyReactScraper
+	url = git@github.com:mpisters/FootyReactScraper.git
