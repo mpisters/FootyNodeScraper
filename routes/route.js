@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const footyController = require('../footyController');
 router.get('/scrape/', async (req, res) => {
   const url = 'https://www.footy.eu/schemas-standen/dinsdag-dames-5v5/';
 
@@ -14,4 +15,5 @@ router.get('/scrape/', async (req, res) => {
   res.json({'htmlPage': htmlPage});
 });
 
+router.post('/scores/', footyController.addScores);
 module.exports = router;
