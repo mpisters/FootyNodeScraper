@@ -7,7 +7,6 @@ class Scores {
 
   save() {
     const db = getDb();
-    console.log(this)
     return db.collection('scores')
         .insertOne(this)
         .then((result) => console.log("added to database"))
