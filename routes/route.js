@@ -16,6 +16,8 @@ router.get('/scrape/', async (req, res) => {
 });
 
 router.post('/scores/', footyController.addScores);
-
+router.get('/scores/', footyController.getScores);
 router.post('/next-matches/', footyController.addNextMatches)
+
+
 module.exports = router;
